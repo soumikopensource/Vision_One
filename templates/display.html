@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Resize</title>
+</head>
+<body>
+<h1>Your Uploaded Image</h1>
+
+<div style="width:500px;height:500px;overflow:scroll;diplay:flex" >
+
+    <img src="static/{{filename}}" alt="bhaag yeha se">
+</div>
+<br>
+<br>
+
+<div style="display:flex-initial">
+    <h2>Want to Resize???</h2>
+    <h3>Enter the dimensions of the desired image</h3>
+    <form action="/resize" method="post">
+        <label>Width (in px) </label>
+        <input type="text"name="width">
+        <label>Height (in px) </label>
+        <input type="text" name="Height"><br>
+        <br>
+        <input type="submit"value="Resize image">
+    </form>
+</div>
+
+<div>
+
+    <h2> Flip the image</h2>
+    <form action="/flip" method="post">
+        <h3> Enter the parameter</h3>
+        <input type="text"name="number">
+        <br>
+        <br>
+        <input type="submit"value="Flip image">
+
+
+    </form>
+
+
+</div>
+</body>
+</html>
